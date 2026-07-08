@@ -1,0 +1,19 @@
+{
+  "name": "Class 8 English MCQs - PECTTA 2026-27",
+  "short_name": "Eng8 MCQ",
+  "description": "Class 8 English MCQ practice app following PECTTA 2026-27 pattern - 10 papers, 25 MCQs each, GHS 124NB",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f1ea",
+  "theme_color": "#0f2942",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
