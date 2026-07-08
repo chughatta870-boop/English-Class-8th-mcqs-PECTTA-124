@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Class 8 English MCQs — PECTTA 2026-27 | GHS 124NB</title>
+<meta name="description" content="Class 8 English MCQ practice app following PECTTA 2026-27 pattern — 10 papers, 25 MCQs each." />
+<meta name="theme-color" content="#0f2942" />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="icon.svg" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-watermark">M Ijaz &middot; GHS 124NB</div>
+
+<!-- ===================== HOME SCREEN ===================== -->
+<main id="screen-home" class="screen active">
+  <header class="home-header">
+    <h1>Class 8 English MCQs</h1>
+    <p class="subtitle">PECTTA Exam Pattern 2026-27 &middot; 10 Practice Papers</p>
+    <div class="header-badges">
+      <span class="badge">25 MCQs / Paper</span>
+      <span class="badge">50 Marks</span>
+      <span class="badge">Passing: 33%</span>
+    </div>
+  </header>
+
+  <section class="name-section">
+    <label for="student-name">Student Name</label>
+    <input type="text" id="student-name" placeholder="Enter your full name" autocomplete="off" />
+  </section>
+
+  <section id="papers-grid" class="papers-grid"></section>
+
+  <footer class="home-footer">
+    <p>Offline-ready PWA &middot; Covers Nouns, Verbs, Prepositions, Pronouns, Gender, Singular/Plural, all 12 Tenses, Comprehension &amp; VIP MCQs</p>
+    <p class="credit">Developed by M Ijaz — GHS 124NB</p>
+  </footer>
+</main>
+
+<!-- ===================== QUIZ SCREEN ===================== -->
+<main id="screen-quiz" class="screen">
+  <header class="quiz-header">
+    <button id="btn-quit-quiz" class="btn-icon" aria-label="Quit">&larr;</button>
+    <div class="quiz-header-info">
+      <h2 id="quiz-paper-title">Paper 1</h2>
+      <span id="quiz-progress-text">Question 1 of 25</span>
+    </div>
+    <span id="quiz-category" class="quiz-cat-tag">Noun</span>
+  </header>
+
+  <div class="progress-bar">
+    <div id="quiz-progress-fill" class="progress-fill"></div>
+  </div>
+
+  <div id="quiz-passage" class="quiz-passage"></div>
+
+  <section class="quiz-question-box">
+    <p id="quiz-question-text" class="quiz-question-text"></p>
+    <div id="quiz-options" class="quiz-options"></div>
+  </section>
+
+  <nav class="quiz-nav">
+    <button id="btn-prev" class="btn btn-secondary">&larr; Previous</button>
+    <button id="btn-next" class="btn btn-primary">Next &rarr;</button>
+    <button id="btn-submit" class="btn btn-success" style="display:none;">Submit Paper</button>
+  </nav>
+</main>
+
+<!-- ===================== RESULT SCREEN ===================== -->
+<main id="screen-result" class="screen">
+  <div class="result-container">
+    <h2 id="result-status" class="result-status">PASS</h2>
+
+    <div class="result-summary">
+      <div class="result-row"><span>Student</span><strong id="result-name"></strong></div>
+      <div class="result-row"><span>Paper</span><strong id="result-paper"></strong></div>
+      <div class="result-row"><span>Marks</span><strong id="result-score"></strong></div>
+      <div class="result-row"><span>Correct MCQs</span><strong id="result-correct"></strong></div>
+      <div class="result-row"><span>Percentage</span><strong id="result-percent"></strong></div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="result-canvas"></canvas>
+    </div>
+
+    <div class="result-actions">
+      <button id="btn-download" class="btn btn-primary">⬇ Download Result Card</button>
+      <button id="btn-share" class="btn btn-secondary">↗ Share Result</button>
+    </div>
+
+    <div class="result-actions secondary-actions">
+      <button id="btn-review" class="btn btn-outline">View Answer Review</button>
+      <button id="btn-retake" class="btn btn-outline">Retake Paper</button>
+      <button id="btn-home" class="btn btn-outline">Back to Home</button>
+    </div>
+
+    <div id="review-box" class="review-box"></div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
